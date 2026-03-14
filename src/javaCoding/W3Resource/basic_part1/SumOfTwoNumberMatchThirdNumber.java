@@ -1,5 +1,7 @@
 package javaCoding.W3Resource.basic_part1;
 
+import static java.lang.StringTemplate.STR;
+
 public class SumOfTwoNumberMatchThirdNumber {
     public boolean twoNumbersMatchThirdNumber(int n1, int n2, int n3){
         //add two numbers
