@@ -5,7 +5,9 @@ import java.util.List;
 public class SumOfNumbers {
     public static void main(String[] args) {
         List<Integer> list = List.of(1,2,3,4,5);
-        int sum = list.stream().reduce(0, Integer::sum);
+        int sum = list.stream().reduce(0, (a, b) -> a + b);
+        int sum1 = list.stream().mapToInt(Integer::intValue).sum();
         System.out.println(sum);
+        System.out.println(sum1);
     }
 }
